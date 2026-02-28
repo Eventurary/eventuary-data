@@ -34,12 +34,12 @@ dev = [
 
 [tool.pytest]
 testpaths = [
-    "src/test",
+    "src/test/",
 ]
 pythonpath = [
     "src/app"
 ]
-python_functions = ["*_test"]
+python_functions = ["*_test", "test_*"]
 
 [tool.ruff]
 line-length = 88
