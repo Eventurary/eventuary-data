@@ -23,7 +23,6 @@ dependencies = [
 Jira = "https://eventurary.atlassian.net/jira/software/projects/EV/boards/34"
 Repository = "https://github.com/Eventurary/eventuary-data"
 
-
 [project.optional-dependencies]
 dev = [
     "pytest",
@@ -32,6 +31,15 @@ dev = [
     "pytest-cov",
     "ty"
 ]
+
+[tool.pytest]
+testpaths = [
+    "src/test",
+]
+pythonpath = [
+    "src/main"
+]
+python_functions = ["*_test"]
 
 [tool.ruff]
 line-length = 88
