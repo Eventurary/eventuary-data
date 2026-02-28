@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eventuary-data"
+version = "0.1.0"
+description = "FastAPI API service backed by MySQL using SQLModel for the eventuary app"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+  {name = "York Merrick", email = "yorkmerrick@outlook.com"},
+  {name = "Tommy Singleton", email = "iamsingleton6@gmail.com"},
+]
+dependencies = [
+    "fastapi[standard]",
+    "sqlmodel",
+    "PyMySQL[rsa]",
+    "alembic",
+]
+
+[project.urls]
+Jira = "https://eventurary.atlassian.net/jira/software/projects/EV/boards/34"
+Repository = "https://github.com/Eventurary/eventuary-data"
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+    "ruff",
+    "pytest-cov",
+    "ty"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/main"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src/main" = "athena"
