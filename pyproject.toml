@@ -37,7 +37,7 @@ testpaths = [
     "src/test",
 ]
 pythonpath = [
-    "src/main"
+    "src/app"
 ]
 python_functions = ["*_test"]
 
@@ -46,7 +46,7 @@ line-length = 88
 target-version = "py312"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/main"]
+packages = ["src/app"]
 
 [tool.hatch.build.targets.wheel.sources]
-"src/main" = "athena"
+"src/app" = "athena"
