@@ -56,3 +56,9 @@ Stopping containers:
 ```shell
 dockker compose stop
 ```
+
+## Viewing data in browser
+
+1. Run the containers
+2. Ensure both database and adminer containers are running
+3. Go to `http://localhost:8080`
