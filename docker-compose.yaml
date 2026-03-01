@@ -36,7 +36,7 @@ services:
     restart: unless-stopped
 
   adminer:
-    image: adminer
+    image: adminer:latest
     container_name: eventuary-adminer
     ports:
       - "8080:8080"
