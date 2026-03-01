@@ -10,23 +10,31 @@ CRUD wrapper repository for eventuary data
     python3 -m venv .venv
     ```
 3. Activate virutal Environment 
-    >Unix systems
-    >
-    >`source bin/activate`
 
-    >Windows Systems
-    >
-    >`. .venv/Scripts/activate`
+    ```shell 
+    Unix systems:
+    source .venv/bin/activate
+    ```
+    ```powershell
+    Windows Systems:
+    . .venv/Scripts/activate
+    ```
 
 4. Install Dependencies:
     ```shell
-    pip install .[dev] && pip uninstall -y eventuary-data
+    pip install -e '.[dev]' && pip uninstall -y eventuary-data
     ```
 
-## Lint Checking
+## Jira Board
+[Link to the board](https://eventurary.atlassian.net/jira/software/projects/EV/boards/34?atlOrigin=eyJpIjoiN2VjNThiZWU0YzNmNDQ3YTk2MmM5NDA1YTBkMTZhM2EiLCJwIjoiaiJ9)
+
+## Linting
 
 ```shell
 ruff check
+```
+```shell
+ruff format
 ```
 
 ## Type checking
@@ -62,3 +70,13 @@ dockker compose stop
 1. Run the containers
 2. Ensure both database and adminer containers are running
 3. Go to `http://localhost:8080`
+
+## Recommended VSCode extensions
+
+- Ruff
+- Ty
+- Python Debugger
+- Container tools
+- Dev Containers
+- Even Better TOML
+- isort
