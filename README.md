@@ -14,7 +14,8 @@ CRUD wrapper repository for eventuary data
     ```shell 
     Unix systems:
     source .venv/bin/activate
-    
+    ```
+    ```powershell
     Windows Systems:
     . .venv/Scripts/activate
     ```
