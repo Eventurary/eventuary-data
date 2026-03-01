@@ -40,3 +40,19 @@ ty check
 ```shell
 pytest
 ```
+
+## Run containers
+Create and run containers:
+```shell
+docker compose up
+```
+
+Running containers:
+```shell
+docker compose start
+```
+
+Stopping containers:
+```shell
+dockker compose stop
+```
