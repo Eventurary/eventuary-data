@@ -25,6 +25,11 @@ CRUD wrapper repository for eventuary data
     pip install -e '.[dev]' && pip uninstall -y eventuary-data
     ```
 
+5. Install pre-commit hook
+    ```shell
+    pre-commit install
+    ```
+
 ## Jira Board
 [Link to the board](https://eventurary.atlassian.net/jira/software/projects/EV/boards/34?atlOrigin=eyJpIjoiN2VjNThiZWU0YzNmNDQ3YTk2MmM5NDA1YTBkMTZhM2EiLCJwIjoiaiJ9)
 

@@ -29,7 +29,8 @@ dev = [
     "httpx",
     "ruff",
     "pytest-cov",
-    "ty"
+    "ty",
+    "pre-commit"
 ]
 
 [tool.pytest]
